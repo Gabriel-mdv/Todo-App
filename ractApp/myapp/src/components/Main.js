@@ -13,6 +13,7 @@ function Main() {
                     <li>It allows leveraging reusable components</li>
                     <li>It is hirable</li>
                     <li>It is consistently maintained by smart people (facebook)</li>
+                    <li>First created by Jordan Walker in 2013. Hence new</li>
                 </ul>
             </div>
         </main>
