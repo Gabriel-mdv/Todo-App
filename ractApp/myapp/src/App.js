@@ -1,27 +1,29 @@
-// import logo from './logo.svg';
-import './index.css';
-import Navbar from './components/Navbar';
-import SingleJoke from './components/singleJoke.js';
-import { Box } from '@material-ui/core'
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AddTodoForm from './components/AddTodoForm';
+import TodoList from './components/TodoList';
+import TotalCompleteItems from './components/TotalCompleteItems';
+import CounterComp from './components/counterComp';
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
+const App = () => {
+	return (
+		<div className='container bg-white p-4 mt-5'>
+			<h1>My Todo List</h1>
+			<AddTodoForm />
+			<TodoList />
+			<TotalCompleteItems />
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <CounterComp/>
 
 
-      <Box>
-        <SingleJoke setup='How did the programmer die in the shower?' 
-        punchline='He read the shampoo bottle instructions: Lather. Rinse. Repeat.' />
-        <SingleJoke punchline='There are only 10 kinds of people in this world: those who know binary and those who don’t.' />
-        <SingleJoke punchline='You are my african queen' />
-        <SingleJoke setup='How did the hacker escape the police?' 
-        punchline='He just ransomware' />
-      </Box>
-
-
-    </div>
-  );
-}
+		</div>
+	);
+};
 
 export default App;
